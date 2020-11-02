@@ -4,5 +4,9 @@
    <li>
      <a href="/books/<%= book.id %>"><%= book.title %></a>
    </li>
+   <a href="/books/<%= book.id %>/edit">Edit</a>
+   <form action="/books/<%= book._id%>?_method=DELETE" method="POST">
+    <button>Delete</button>
+  </form>
   <% }) %>
 </ul>

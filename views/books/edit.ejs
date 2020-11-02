@@ -1,0 +1,13 @@
+<h1>Edit Book</h1>
+    <form action="/books/<%= book._id%>?_method=PUT" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="title" id="title" value="<%= book.title %> " /> <br />
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author" value="<%= book.author%> " />
+      <label for="img_Url">Book Image URL</label>
+      <input type="url" name="img_Url" id="img_Url" value="<%= book.img_Url%> " />
+      <label for="rating">rating</label>
+      <input type="text" name="rating" id="rating" value="<%= book.rating %> " />
+      <br />
+      <input type="submit" value="Update Book" />
+    </form>

@@ -28,6 +28,22 @@ const Category = require('../models/category');
     });
   });
   
+
+// UPDATE
+router.put('/:id', (req, res) => {
+    
+    Book.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true },
+      (error, updatedModel) => {
+        res.redirect('/books')
+      }
+    )
+  })
+
+
+
   router.post('/', async (req, res) => {
     console.log(req.body);
     let book = await Book.create(req.body);
@@ -47,5 +63,25 @@ const Category = require('../models/category');
     console.log(foundBook);
     res.redirect(`/books/${foundBook.id}`);
   });
+
+
+  //delete
+router.delete("/:id",(req,res)=>{
+    //const index = req.params.id
+    Book.findByIdAndRemove(req.params.id,(error) => {
+    res.redirect('/books');
+    });
+    });
+
+// EDIT
+router.get('/:id/edit', (req, res) => {
+   Book.findById(req.params.id, (error, foundbook) => {
+      res.render('books/edit.ejs', {
+       book: foundbook
+       
+      })
+    })
+  })
+    
 
 module.exports = router;
