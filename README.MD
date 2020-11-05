@@ -65,6 +65,7 @@
 
 ### Acknowledgets/References:
 
+- Usman Bashir ( GA Teacher)
 - Google Search
 - Stackover flow
 - Bootstrap

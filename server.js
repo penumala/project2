@@ -50,16 +50,10 @@ app.use('/categories', require('./controllers/categoriesController'));
 
 //___________________
 //localhost:3000
-/* app.get('/' , (req, res) => {
+app.get('/' , (req, res) => {
   res.send('Hello World!');
-}); */
+});
 //___________________
-
-router.get('/', async(req, res) => {
-  let allBooks = await Book.find()
-  res.render('books/index.ejs', {books:allBooks})
-  console.log(allBooks);
-})
 //Listener
 //___________________
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));
