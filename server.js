@@ -50,9 +50,9 @@ app.use('/categories', require('./controllers/categoriesController'));
 
 //___________________
 //localhost:3000
-app.get('/' , (req, res) => {
+/* app.get('/' , (req, res) => {
   res.send('Hello World!');
-});
+}); */
 //___________________
 //Listener
 //___________________
