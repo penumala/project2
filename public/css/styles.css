@@ -1,6 +1,19 @@
+.navbar-brand {
+  background-color: tomato;
+  font-style: italic;
+  color: white;
+}
+.navbar-collapse {
+  background-color: tomato;
+  font-style: italic;
+  color: white;
+}
 body {
   font: white;
   background-color: lightblue;
+}
+.navbar navbar-expand {
+  color: white;
 }
 .button {
   display: block;
@@ -19,7 +32,7 @@ ol.c {
 }
 h1 {
   font-style: oblique;
-  color: aliceblue;
+  color: rgb(14, 123, 218);
 }
 span {
   background-color: bisque;
