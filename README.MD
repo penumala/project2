@@ -11,7 +11,7 @@
 5. Bootstrap
 6. CSS
 
-### Devlopemt Enviroment:
+### Developemt Enviroment:
 
 1. Visual Studio Code
 2. Mongo Compass
@@ -40,9 +40,11 @@
 ### Approach :
 
 1. Invisioned basic layout with Index, Show, New and Edit pages
-2. Created New Category Page
+2. Created Required Navigation Page
 3. Created user layout using HTML
 4. Styled the page using CSS
+5. Created Required Routes
+6. Created Required Controllers per MVC principals
 
 ### Express/DB/Mongoose
 
