@@ -54,6 +54,12 @@ app.use('/categories', require('./controllers/categoriesController'));
   res.send('Hello World!');
 }); */
 //___________________
+
+router.get('/', async(req, res) => {
+  let allBooks = await Book.find()
+  res.render('books/index.ejs', {books:allBooks})
+  console.log(allBooks);
+})
 //Listener
 //___________________
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));
