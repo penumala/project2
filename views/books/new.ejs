@@ -21,12 +21,13 @@
  <tr class="d-flex"> 
 <td class ="col-sm-3">
   <label for="<%=category.book_type %>"><%= category.book_type%></label>
-      <input type="checkbox" value="">
+  <input type="checkbox" id="<%= category.book_type %>" name="categories" value="<%= category.id %>"/>
     </label>
   </td>
   <td class ="col-sm-3">
     <label for="<%=category.genre %>"><%=category.genre%></label>
-      <input type="checkbox" value="">
+    <input type="checkbox" id="<%= category.genre %>" name="categories" value="<%= category.id %>"
+  />
     </label>
   </td>
   </tr>
