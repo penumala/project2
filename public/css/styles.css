@@ -1,3 +1,7 @@
+.breadcrumb {
+  background-color: rgb(14, 206, 206);
+}
+
 .navbar-brand {
   background-color: tomato;
   font-style: italic;

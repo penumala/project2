@@ -3,9 +3,10 @@ const mongoose = require('mongoose');
 const Book = require('./models/book');
 const Category = require('./models/category');
 
-const mongoURI = 'mongodb://localhost:27017/daniel-project2';
+//const mongoURI = 'mongodb://localhost:27017/daniel-project2';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/daniel-project2';
 mongoose.connect(
-  mongoURI,
+  MONGODB_URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
