@@ -2,7 +2,7 @@
 <form action="/books" method="POST">
   <div class="form-group">
     <label for="title">Title</label>
-    <input type="text" class="form-control" id="title" name="title" />
+    <input type="text" class="form-control" id="title" name="title"/>
     <label for="author">Author</label>
     <input type="text" class="form-control" id="author" name="author" />
     <label for="img_Url">Book Image Url</label>
@@ -11,22 +11,28 @@
     <input type="text" class="form-control" id="rating" name="rating" />
     
 </div>
+<h3>Select Book Type Genre</h3>
+<table class="table">
+  <tr class="d-flex"> 
+  <th class="col-sm-3"> Book Type </th>
+  <th class="col-sm-3"> Book Genre </th>
+  </tr>
   <% categories.forEach(category=> { %>
-  <input
-    type="checkbox"
-    id="<%= category.book_type %>"
-    name="categories"
-    value="<%= category.id %>"
-  />
+ <tr class="d-flex"> 
+<td class ="col-sm-3">
+  <label for="<%=category.book_type %>"><%= category.book_type%></label>
+      <input type="checkbox" value="">
+    </label>
+  </td>
+  <td class ="col-sm-3">
+    <label for="<%=category.genre %>"><%=category.genre%></label>
+      <input type="checkbox" value="">
+    </label>
+  </td>
+  </tr>
 
-  <input
-    type="checkbox"
-    id="<%= category.genre %>"
-    name="categories"
-    value="<%= category.id %>"
-  />
- <label for="<%= category.book_type %>"><%= category.book_type %></label><br />
- <label for="<%= category.genre %>"><%= category.genre %></label><br />
- <% })%>
-  <button type="submit" class="btn btn-primary">Submit</button>
+    <% })%>
+  </table>
+  <!-- <!<button type="submit" class="btn btn-primary">Submit</button> -->
+  <input type="submit" value="Add Book" class="button" />
 </form>

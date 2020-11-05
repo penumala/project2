@@ -1,23 +1,23 @@
-<h1><%= book.name %> Book Detail's Page</h1>
+<h1><%= book.name %> Book Detail's</h1>
+<ul>
+  <li><%= book.author%></li>
+  <li><%= book.rating%></li>
+  <%book.categories.sort().forEach(ing => { %>
+  <li><%= ing.book_type%> <% }) %></li>
+  <%book.categories.forEach(gre => { %>
+    <li><%= gre.genre%> <% }) %></li> 
+    <img src= <%=book.img_Url%>>
+</ul>
+<form action="/books/<%= book._id %>?_method=DELETE" method="POST">
+  <button>Delete</button>
+</form>
+
 <h4>Add Category</h4>
 <form action="/books/<%= book.id %>/categories?_method=PUT" method="POST">
   <% categories.forEach(category => { %>
   <input type="checkbox" name="categories" value="<%= category.id %>" />
   <label for="<%= category.book_type%>"><%=category.book_type%></label><br />
-  
+  <label for="<%= category.genre%>"><%=category.genre%></label><br />
   <% })%>
   <input type="submit" value="Add Category" />
-</form>
-<h4>Category and Author </h4>
-<ul>
-  <li><%= book.author%></li>
-  <li><%= book.rating%></li>
-  <li><%= book.img_Url%></li>
-  <%book.categories.sort().forEach(ing => { %>
-  <li><%= ing.book_type%> <% }) %></li>
-  <%book.categories.forEach(gre => { %>
-    <li><%= gre.genre%> <% }) %></li> 
-</ul>
-<form action="/books/<%= book._id %>?_method=DELETE" method="POST">
-  <button>Delete</button>
 </form>

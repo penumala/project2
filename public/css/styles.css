@@ -1,0 +1,26 @@
+body {
+  font: white;
+  background-color: lightblue;
+}
+.button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background: #4e9caf;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+}
+ol.c {
+  list-style-type: upper-roman;
+}
+h1 {
+  font-style: oblique;
+  color: aliceblue;
+}
+span {
+  background-color: bisque;
+}

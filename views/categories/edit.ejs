@@ -1,0 +1,10 @@
+<h1>Edit Category</h1>
+    <form action="/categories/<%= category._id%>?_method=PUT" method="POST">
+      <label for="book_type">Book Type</label>
+      <input type="text" name="book_type" id="book_type" value="<%= category.book_type %> " /> <br />
+      <label for="genre">Genre</label>
+      <input type="text" name="genre" id="genre" value="<%= category.genre%> " />
+      <br />
+      <a href="/books/<%= category.id %>/edit">Edit</a>
+      <input type="submit" value="Update Category" />
+    </form>
