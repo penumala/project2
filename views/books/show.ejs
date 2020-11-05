@@ -14,5 +14,13 @@
   <br>
   <button class="button js-button">Delete Book</button>
 </form>
-
+<h4>Add Category</h4>
+<form action="/books/<%= book.id %>/categories?_method=PUT" method="POST">
+  <% categories.forEach(category => { %>
+  <input type="checkbox" name="categories" value="<%= category.id %>" />
+  <label for="<%= category.book_type%>"><%=category.book_type%></label><br />
+  <label for="<%= category.genre%>"><%=category.genre%></label><br />
+  <% })%>
+  <input type="submit" value="Add Category" />
+</form> 
 

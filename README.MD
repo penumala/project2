@@ -39,31 +39,32 @@
 
 ### Approach :
 
-1. Invisioned basic layout with 3x3 grid
-2. Two buttons to start game and Reset the game
+1. Invisioned basic layout with Index, Show, New and Edit pages
+2. Created New Category Page
 3. Created user layout using HTML
 4. Styled the page using CSS
 
-### JS Script:
+### Express/DB/Mongoose
 
-1. Created an array to track playerclicks
-2. Array to track winning combos
-3. Winning Logi function: captured userclicks into an array and compared that with the
-4. wincombo array. once the winner is determined display the winner on the screen.
-5. Draw Logic: created a bullion to capature win status if win status is true, display winner, if not Draw game message.
+1. Installed Required Express Modules
+2. Created required collections and documents in mongo and established relatioship
+3. Installed Monoose depedencies
+4. Created CRUD routes
+5. Pused code to heroku
 
 ### How it works:
 
-1. Upon launch of the Game in a web browser .
-2. User is rendered with a UI with Game Heading and a 3x3 grid and two buttons, New Game and Reset Game.
-3. New Game : By clicking new game button user is met with a message "Player X Go -First!" X can click any where in the grid will be populated with an X.
-4. After x's turn , message for next player turn will be displayed.
-
-5. At this point player 2 turn. player 2's can click anywhere in the open cell it will be populated with an O.
-6. Any player matches vertical, horizontal or diagonal X or O first will be declared the winner.
-7. Click Reset button to reset the board.
+1. Launch the App in a web browser .
+2. User is landed on the homepage with list of all books collection and option on the top to Add new book, My Library
+   Add New Book New Category
+3. Add New book : By clicking this button user is navigated to new page were user can enter new book details and click add .
+4. Edit book by clicking edit button
+5. Delete Book by cliking delete button
 
 ### Acknowledgets/References:
 
 - Google Search
 - Stackover flow
+- Bootstrap
+- MongoDB
+- Heroku
