@@ -1,11 +1,11 @@
-<h1>All Books Collection's</h1>
+<h1>All Books Collection </h1>
 <ol>
   <% books.forEach(book => { %>
    <li>
      <a href="/books/<%= book.id %>"><%= book.title %></a>
    </li>
    <a href="/books/<%= book.id %>/edit" class="button js-button" role="button">Edit Book</a>
-   <br>
+ 
    <form action="/books/<%= book._id%>?_method=DELETE" method="POST">
     <button class="button js-button">Delete Book</button>
   </form>
