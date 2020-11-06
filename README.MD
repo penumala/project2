@@ -10,6 +10,7 @@
 4. Mongoose
 5. Bootstrap
 6. CSS
+7. Node.js
 
 ### Developemt Enviroment:
 
