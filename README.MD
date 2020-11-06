@@ -64,6 +64,11 @@
 4. Edit book by clicking edit button
 5. Delete Book by cliking delete button
 
+### Future Updates:
+
+1. Build Login
+2. Full Crud on Categories
+
 ### Acknowledgets/References:
 
 - Usman Bashir ( GA Teacher)
